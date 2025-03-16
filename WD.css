@@ -1,0 +1,110 @@
+/* تنظیمات پایه */
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    direction: rtl;
+    size: 23px;
+}
+
+
+/* استایل برای قرار دادن عکس‌ها در وسط صفحه */
+
+.image-container {
+    display: flex;
+    /* استفاده از Flexbox */
+    justify-content: center;
+    /* وسط‌چین کردن افقی */
+    align-items: center;
+    /* وسط‌چین کردن عمودی */
+    gap: 10px;
+    /* فاصله بین عکس‌ها */
+}
+
+
+/* استایل برای تنظیم اندازه عکس‌ها به اندازه آیکون */
+
+.image-container img {
+    width: 120px;
+    /* عرض عکس */
+    height: 120px;
+    /* ارتفاع عکس */
+    object-fit: cover;
+    /* حفظ نسبت تصویر بدون تغییر شکل */
+}
+
+
+/* سر صفحه  */
+
+.header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #4700fc;
+}
+
+
+/* تصویر پروفایل */
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 90%;
+    margin: 10px auto;
+    display: block;
+}
+
+
+/* مهارت‌ها */
+
+.skill-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: #0d05ff;
+    color: rgb(0, 234, 255);
+    padding: 8px 20px;
+    border-radius: 25px;
+}
+
+
+/* تجربه کاری */
+
+.job {
+    background-color: #0d05ff;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(181, 0, 175, 0.1);
+}
+
+
+/* لینک‌های تماس */
+
+.social-links a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #333;
+}
+
+
+/* واکنش‌گرایی */
+
+@media (max-width: 768px) {
+    .skill-container {
+        justify-content: center;
+    }
+}
+
+@font-face {
+    font-family: 'IRANSans';
+    src: url('fonts/IRANSansWeb.woff2') format('woff2');
+}
+
+body {
+    font-family: 'IRANSans', sans-serif;
+}
